@@ -3,3 +3,86 @@
  # Created: 15-07-2017 16:48
  # Licence: GPLv3 - General Public Licence version 3
  #}
+<!DOCTYPE html>
+<html lang="{{ app.request.locale }}">
+<head>
+	<meta charset="{% block metaCharset %}utf-8{% endblock %}">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description"
+	      content="{% block metaPageDescription %}Dit is de website van de Camping ahimsa in Frankrijk.{% endblock %}">
+	<meta name="keywords"
+	      content="{% block metaKeywords %}Camping Frankrijk, Camping Ahimsa, Ahimsa, kamperen, appartementen, Bresse, Kees Kok, Roos fijneman, Rose-Marie Fijneman, Joris Rietveld{% endblock %}">
+	<meta name="author" content="{% block metaAuthor %}Joris Rietveld{% endblock %}">
+	<meta name="robots" content="{% block metaRobots %}index, follow{% endblock %}">
+	<meta name="revisit-after" content="{% block metaRevisit %}3 days{% endblock %}">
+	<title>{% block pageTitle %}Camping Ahimsa{% endblock %}</title>
+
+	{# Include and minify the cascading style sheeds. #}
+	{% block stylesheets %}
+		{% stylesheets
+		'third-party/font-awesome/css/font-awesome.min.css'
+		'third-party/tether/dist/css/tether.min.css'
+		'third-party/bootstrap/dist/css/bootstrap.min.css'
+		'third-party/flag-icon-css/css/flag-icon.min.css'
+		'bundles/app/css/main.css'
+		filter='cssrewrite' %}
+		<link rel="stylesheet" href="{{ asset_url }}">
+		{% endstylesheets %}
+
+	{% endblock %}
+</head>
+<body id="page-top">
+{# The top navigation menu of the webpage. #}
+{% block navigationBar %}
+	{{ include('AppBundle:Components:navigationBar.html.twig') }}
+{% endblock %}
+
+{# The header of the webpage. #}
+{% block pageHeader %}
+	<header class="bg-primary text-white test-header">
+		<div class="container text-center">
+			<h1 class="title-font">
+				{% block pageHeaderTitle %}
+					Ahimsa
+				{% endblock %}
+			</h1>
+			<p class="lead">
+				{% block pageHeaderSubTitle %}
+					Camping a la Ferme in het hard van Bresse
+				{% endblock %}
+			</p>
+		</div>
+	</header>
+{% endblock %}
+
+{# The main content of the webpage.#}
+{% block pageContent %}
+
+{% endblock %}
+
+{# The footer of the webpage. #}
+{% block pageFooter %}
+	<!-- Footer -->
+	<footer class="py-5 bg-inverse">
+		<div class="container">
+			<p class="m-0 text-center text-white">Copyright &copy; Joris Rietveld 2017</p>
+		</div>
+		<!-- /.container -->
+	</footer>
+{% endblock %}
+
+{# Load the javasripts at the botom of the page to improve the load speed. #}
+{% block javascripts %}
+	{% javascripts
+	'third-party/jquery/dist/jquery.min.js'
+	'third-party/tether/dist/js/tether.min.js'
+	'third-party/jquery.easing/js/jquery.easing.min.js'
+	'third-party/bootstrap/dist/js/bootstrap.min.js'
+	'@AppBundle/Resources/public/js/*'
+	output='js/main.js' %}
+	<script src="{{ asset_url }}"></script>
+	{% endjavascripts %}
+{% endblock %}
+</body>
+</html>

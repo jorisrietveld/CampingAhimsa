@@ -1,0 +1,7 @@
+# Author: Joris Rietveld <jorisrietveld@gmail.com>
+# Created: 16-07-2017 12:42
+# Licence: GPLv3 - General Public Licence version 3
+
+about:
+    path:     /over-ons
+    defaults: { _controller: AppBundle:About:about }

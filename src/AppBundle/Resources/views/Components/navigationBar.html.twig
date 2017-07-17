@@ -1,0 +1,51 @@
+{#
+ # Author: Joris Rietveld <jorisrietveld@gmail.com>
+ # Created: 16-07-2017 17:19
+ # Licence: GPLv3 - General Public Licence version 3
+ #}
+ #}
+<!-- Navigation -->
+<nav id="mainNav" class="navbar fixed-top navbar-toggleable-md navbar-inverse bg-inverse">
+	<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="container">
+		<div class="collapse navbar-collapse" id="navbarExample">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="{{ path('home') }}#page-top">Home</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="{{ path('home') }}#about">Over kees & roos</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="{{ path('home') }}#route">Route</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="{{ path('home') }}#contact">Contact</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="{{ path('camping') }}">Camping</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="{{ path('appartments') }}">Apartamenten</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="{{ path('facilities') }}">Facaliteiten</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="{{ path('surrounding') }}">Omgeving</a>
+				</li>
+			</ul>
+
+			<div class="navbar-nav">
+				<button class="btn btn-lg flag-icon-background flag-icon-nl m-1 btn-language"></button>
+				<button class="btn btn-lg flag-icon-background flag-icon-fr m-1 btn-language"></button>
+				<button class="btn btn-lg flag-icon-background flag-icon-gb m-1 btn-language"></button>
+			</div>
+		</div>
+	</div>
+</nav>

@@ -8,11 +8,11 @@ namespace AppBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
-class HomeController extends Controller
+class FacilitiesController extends Controller
 {
-    public function homeAction()
+    public function facilitiesAction()
     {
-        return $this->render('AppBundle:Home:home.html.twig', array(
+        return $this->render('AppBundle:Facilities:facilities.html.twig', array(
             // ...
         ));
     }

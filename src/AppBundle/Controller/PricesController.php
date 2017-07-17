@@ -8,11 +8,11 @@ namespace AppBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
-class HomeController extends Controller
+class PricesController extends Controller
 {
-    public function homeAction()
+    public function prijzenAction()
     {
-        return $this->render('AppBundle:Home:home.html.twig', array(
+        return $this->render('AppBundle:Prices:prijzen.html.twig', array(
             // ...
         ));
     }

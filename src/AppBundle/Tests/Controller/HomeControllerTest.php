@@ -13,32 +13,4 @@ class HomeControllerTest extends WebTestCase
         $crawler = $client->request('GET', '/home');
     }
 
-    public function testCampingsite()
-    {
-        $client = static::createClient();
-
-        $crawler = $client->request('GET', '/campingSite');
-    }
-
-    public function testApartment()
-    {
-        $client = static::createClient();
-
-        $crawler = $client->request('GET', '/apartment');
-    }
-
-    public function testPrices()
-    {
-        $client = static::createClient();
-
-        $crawler = $client->request('GET', '/prices');
-    }
-
-    public function testJoris()
-    {
-        $client = static::createClient();
-
-        $crawler = $client->request('GET', '/joris');
-    }
-
 }

@@ -1,0 +1,16 @@
+# Author: Joris Rietveld <jorisrietveld@gmail.com>
+# Created: 16-07-2017 12:41
+# Licence: GPLv3 - General Public Licence version 3
+
+default:
+    path: /{_locale}
+    defaults: { _controller: AppBundle:Home:home }
+    requirements:
+        _locale: nl|fr|en
+
+home:
+    path:     /{_locale}/home
+    defaults: { _controller: AppBundle:Home:home }
+    requirements:
+        _locale: nl|fr|en
+

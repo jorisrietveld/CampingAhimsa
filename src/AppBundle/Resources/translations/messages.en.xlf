@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-	<file source-language="en" target-language="nl" datatype="plaintext" original="file.ext">
+	<file source-language="en" target-language="en" datatype="plaintext" original="file.ext">
 		<body>
 			<trans-unit id="home.header.subtitle">
 				<source>home.header.subtitle</source>
@@ -22,7 +22,10 @@
 				<source>home.content.route.map.from</source>
 				<target>Vanaf</target>
 			</trans-unit>
-
+			<trans-unit id="camping.content.">
+				<source>home.content.route.map.from</source>
+				<target>Vanaf</target>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

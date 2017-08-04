@@ -3,14 +3,17 @@
 # Licence: GPLv3 - General Public Licence version 3
 
 default:
-    path: /{_locale}
+    path: /
     defaults: { _controller: AppBundle:Home:home }
-    requirements:
-        _locale: nl|fr|en
 
-home:
-    path:     /{_locale}/home
-    defaults: { _controller: AppBundle:Home:home }
-    requirements:
-        _locale: nl|fr|en
+#home:
+#    path:     /home
+#    defaults: { _controller: AppBundle:Home:home }
 
+
+#
+# Code mobile phone.
+# Zwaluw staart plaat merk: lewis - naam: plancher
+# Pose plancher metallique
+# Pin mobile: 4236
+#

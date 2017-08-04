@@ -15,6 +15,20 @@
 	{{ 'home.header.subtitle'|trans }}
 {% endblock %}
 
+{% block navigationHomeSubmenu %}
+	<li class="nav-item">
+		<a class="nav-link" href="{{ path('default') }}#about">{{ 'home.about.title'|trans }}</a>
+	</li>
+
+	<li class="nav-item">
+		<a class="nav-link" href="{{ path('default') }}#route">{{ 'home.route.title'|trans }}</a>
+	</li>
+
+	<li class="nav-item">
+		<a class="nav-link" href="{{ path('default') }}#contact">{{ 'home.contact.title'|trans }}</a>
+	</li>
+{% endblock %}
+
 {% block pageContent %}
 	<section id="about">
 		<div class="container">
@@ -43,8 +57,11 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8 offset-lg-2">
-					<h2>Contacteer ons vooral niet!</h2>
-					<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+					<h2>{{ 'home.contact.form.title'|trans }}</h2>
+					{{ form_start(contactForm) }}
+					{{ form_widget( contactForm ) }}
+					<button type="submit" class="btn btn-info col-12">Versturen</button>
+					{{ form_end(contactForm ) }}
 				</div>
 			</div>
 		</div>

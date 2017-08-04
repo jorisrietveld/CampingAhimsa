@@ -5,9 +5,6 @@
 HomePages:
     resource: '@AppBundle/Resources/config/routing/home.yml'
 
-AboutPages:
-    resource: '@AppBundle/Resources/config/routing/about.yml'
-
 AppartmentPages:
     resource: '@AppBundle/Resources/config/routing/apartments.yml'
 
@@ -22,9 +19,6 @@ PricesPages:
 
 SurroundingPages:
     resource: '@AppBundle/Resources/config/routing/surrounding.yml'
-
-ContactPages:
-    resource: '@AppBundle/Resources/config/routing/contact.yml'
 
 ReservePages:
     resource: '@AppBundle/Resources/config/routing/reserve.yml'

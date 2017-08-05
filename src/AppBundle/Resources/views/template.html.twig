@@ -10,13 +10,13 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description"
-	      content="{% block metaPageDescription %}Dit is de website van de Camping ahimsa in Frankrijk.{% endblock %}">
+	      content="{% block metaPageDescription %}{{ 'metatags.descriptions.home'|trans }}{% endblock %}">
 	<meta name="keywords"
-	      content="{% block metaKeywords %}Camping Frankrijk, Camping Ahimsa, Ahimsa, kamperen, appartementen, Bresse, Kees Kok, Roos fijneman, Rose-Marie Fijneman, Joris Rietveld{% endblock %}">
+	      content="{% block metaKeywords %}{{ 'metatags.keywords.default'|trans }}{% endblock %}">
 	<meta name="author" content="{% block metaAuthor %}Joris Rietveld{% endblock %}">
 	<meta name="robots" content="{% block metaRobots %}index, follow{% endblock %}">
 	<meta name="revisit-after" content="{% block metaRevisit %}3 days{% endblock %}">
-	<title>{% block pageTitle %}Camping Ahimsa{% endblock %}</title>
+	<title>{% block pageTitle %}{{ 'metatags.titles.default'|trans }}{% endblock %}</title>
 
 	{# Include and minify the cascading style sheeds. #}
 	{% block stylesheets %}
@@ -44,31 +44,31 @@
 			<div class="collapse navbar-collapse" id="navbarExample">
 				<ul class="navbar-nav mr-auto">
 					<li>
-						<a class="nav-link text-white" href="{{ path('default') }}#page-top">Home</a>
+						<a class="nav-link text-white" href="{{ path('default') }}#page-top">{{ 'navigation.home.title'|trans }}</a>
 					</li>
 					{% block navigationHomeSubmenu %}
 					{% endblock %}
 
 					<li class="nav-item">
-						<a class="nav-link text-white" href="{{ path('camping') }}">Camping</a>
+						<a class="nav-link text-white" href="{{ path('camping') }}">{{ 'navigation.camping.title'|trans }}</a>
 					</li>
 					{% block navigationCampingSubmenu %}
 					{% endblock %}
 
 					<li class="nav-item">
-						<a class="nav-link text-white" href="{{ path('appartments') }}">Apartamenten</a>
+						<a class="nav-link text-white" href="{{ path('appartments') }}">{{ 'navigation.appartments.title'|trans }}</a>
 					</li>
 					{% block navigationAppartmentSubmenu %}
 					{% endblock %}
 
 					<li class="nav-item">
-						<a class="nav-link text-white" href="{{ path('facilities') }}">Facaliteiten</a>
+						<a class="nav-link text-white" href="{{ path('facilities') }}">{{ 'navigation.facilities.title'|trans }}</a>
 					</li>
 					{% block navigationFacilitiesSubmenu %}
 					{% endblock %}
 
 					<li class="nav-item">
-						<a class="nav-link text-white" href="{{ path('surrounding') }}">Omgeving</a>
+						<a class="nav-link text-white" href="{{ path('surrounding') }}">{{ 'navigation.surroundings.title'|trans }}</a>
 					</li>
 				</ul>
 
@@ -88,12 +88,12 @@
 		<div class="container text-center">
 			<h1 class="title-font">
 				{% block pageHeaderTitle %}
-					Ahimsa
+					{{ 'home.header.title'|trans }}
 				{% endblock %}
 			</h1>
 			<p class="lead">
 				{% block pageHeaderSubTitle %}
-					Camping a la Ferme in het hard van Bresse
+					{{ 'home.header.subtitle'|trans }}
 				{% endblock %}
 			</p>
 		</div>

@@ -27,16 +27,16 @@ class ContactType extends AbstractType
 		$builder
 			->add( 'name', TextType::class, [
 				'attr'  => [ 'autofocus' => true ],
-				'label' => 'home.contact.form.name',
+				'label' => 'home.content.form.contact.name',
 			] )
 			->add( 'subject', TextType::class, [
-				'label' => 'home.contact.form.subject',
+				'label' => 'home.content.form.contact.subject',
 			] )
 			->add( 'emailAddress', EmailType::class, [
-				'label' => 'home.contact.form.email',
+				'label' => 'home.content.form.contact.email',
 			] )
 			->add( 'message', TextareaType::class, [
-				'label' => 'home.contact.form.message',
+				'label' => 'home.content.form.contact.message',
 			] )
 			->add( 'userId', HiddenType::class )
 			->add( 'country', HiddenType::class );
